@@ -79,6 +79,7 @@ export const Qibla = () => {
 				</li>
 				<li className=''>
 					<div className='card__app'>
+						<h2	>Theme</h2>
 						<Theme>
 							<div className='card__arrow'>
 								<svg
