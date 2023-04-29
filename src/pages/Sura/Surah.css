@@ -1,0 +1,208 @@
+.surah__page {
+    padding: 20px;
+    padding-bottom: 120px;
+}
+
+.surah_header {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: fixed;
+    background: rgba(184, 182, 182, 0.178);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.9px);
+    -webkit-backdrop-filter: blur(13.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.surah__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+
+
+}
+
+.back__button {
+    background-color: transparent;
+    border: none;
+}
+
+.surah__img {
+
+    width: 327px;
+    height: 230px;
+    background-image: url("../../assets//images//quran2.svg"), linear-gradient(135deg, rgb(13, 198, 180) 8.1%, #21c68a 79.5%);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    box-shadow: #21c68966 0px 10px 20px 0px;
+}
+
+.surah__img__content {
+
+    width: 215px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    background: linear-gradient(107deg, rgb(13, 198, 180) 8.1%, rgb(33, 198, 138) 79.5%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+.surah__img__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 39px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 4px;
+
+}
+
+.surah__img__en {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.line {
+    width: 100%;
+    display: block;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.76);
+    margin-bottom: 16px;
+}
+
+.surah__img__subtitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+
+.ayah__bar {
+    background: rgba(18, 25, 49, 0.05);
+    border-radius: 10px;
+    padding: 8px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.bar__copy__button {
+    cursor: pointer;
+}
+
+.bar__number {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25px;
+    height: 25px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    text-align: center;
+    background: linear-gradient(107deg, rgb(13, 198, 180) 8.1%, rgb(33, 198, 138) 79.5%);
+    border-radius: 13.5px;
+}
+
+.bar__text {
+    margin: 0 auto;
+}
+
+.bar__ar {
+    margin-top: 10px;
+    text-align: end;
+    background: linear-gradient(107deg, rgb(13, 198, 180) 8.1%, rgb(33, 198, 138) 79.5%);
+    font-family: 'Arial', serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.bar__tr {
+    text-align: end;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #656569;
+}
+
+.bar__copy__button {
+    background-color: transparent;
+    border: none;
+}
+
+.bar__copy__button {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.modal__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 10px 10px;
+    background: linear-gradient(107deg, rgb(13, 198, 180) 8.1%, rgb(33, 198, 138) 79.5%);
+    color: #fff;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+}
+
+.modal__content {
+    box-shadow: rgba(176, 185, 195, 0.29) 0px 0px 15px 0px inset;
+    border-radius: 16px;
+}

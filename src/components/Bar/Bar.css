@@ -1,0 +1,64 @@
+.bar {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    background: rgba(133, 131, 131, 0.425);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(243, 237, 237, 0.1);
+    backdrop-filter: blur(11.8px);
+    -webkit-backdrop-filter: blur(11.8px);
+    padding: 10px 30px;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    border-radius: 25px;
+    z-index: 999;
+}
+
+.bar__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 0;
+}
+
+
+
+.link {
+    display: block;
+    width: 65px;
+    height: 65px;
+    padding: 12px;
+
+    background-color: transparent;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center  ;
+
+}
+
+.activebar {
+    display: block;
+    width: 65px;
+    height: 65px;
+    padding: 12px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center  ;
+
+    background: rgba(255, 255, 255, 0.667);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.bar__img{
+    display: block;
+  margin: 0 auto;
+}
