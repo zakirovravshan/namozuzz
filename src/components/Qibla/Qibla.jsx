@@ -23,7 +23,7 @@ export const Qibla = () => {
 
 					<ul className='qibla__list'>
 						<li className='qibla__items'>
-							<Link to='/'>
+							<Link to='/morning'>
 								<div className='card__app'>
 									<h3 className='card__title'>Tongi Zikrlar</h3>
 									<div className='card__arrow'>
@@ -105,7 +105,7 @@ export const Qibla = () => {
 						<li className='qibla__items'>
 							<Link to='/'>
 								<div className='card__app'>
-									<h3 className='card__title'>Rejalar  </h3>
+									<h3 className='card__title'>Rejalar </h3>
 									<div className='card__arrow'>
 										<svg
 											xmlns='http://www.w3.org/2000/svg'

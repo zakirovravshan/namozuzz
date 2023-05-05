@@ -6,6 +6,7 @@ import { Qibla } from './components/Qibla/Qibla';
 import { Quran } from './components/Quran/Quran';
 import VibrationButton from './components/Vibration';
 import { Surah } from './pages/Sura/Surah';
+import { Morning } from './pages/Morning/Morning';
 
 function App() {
 	return (
@@ -15,8 +16,8 @@ function App() {
 				<Route path='/settings' element={<Settings />} />
 				<Route path='/quran' element={<Quran />} />
 				<Route path='/quran/surah/:number' element={<Surah />} />
-
 				<Route path='/qibla' element={<Qibla />} />
+				<Route path='/morning' element={<Morning />} />
 			</Routes>
 			<Bar />
 		</div>
