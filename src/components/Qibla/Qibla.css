@@ -1,8 +1,12 @@
 /* this card is inspired form this - https://georgefrancis.dev/ */
+.qibla {
+    overflow: hidden;
+}
 
 .card__app {
     --border-radius: 0.75rem;
-    --primary-color: #7257fa;
+    --primary-color: linear-gradient(107deg, rgb(13, 198, 180) 8.1%, rgb(33, 198, 138) 79.5%);
+    ;
     --secondary-color: #3c3852;
     width: 150px;
     height: 100%;
@@ -17,8 +21,7 @@
     text-decoration: none;
 }
 
-.card__app>*+* {
-}
+.card__app>*+* {}
 
 .card__app .card__content {
     color: var(--secondary-color);
@@ -72,11 +75,11 @@
 }
 
 .qibla__list {
-    padding:25px;
+    padding: 25px;
     height: 100vh;
     display: flex;
-   justify-content: center;
-   align-items: start;
+    justify-content: start;
+    align-items: start;
     align-content: start;
     gap: 20px;
     flex-wrap: wrap;
@@ -92,6 +95,6 @@
 }
 
 .qibla__items {
-    
+
     height: 150px;
 }

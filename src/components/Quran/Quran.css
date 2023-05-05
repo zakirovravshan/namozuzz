@@ -215,7 +215,7 @@ body {
     backdrop-filter: blur(13.1px);
     -webkit-backdrop-filter: blur(13.1px);
     overflow: auto;
-    padding-bottom: 220px;
+    padding-bottom: 220px; 
 
 
 }
