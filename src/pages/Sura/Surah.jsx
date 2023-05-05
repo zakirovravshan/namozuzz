@@ -89,7 +89,7 @@ export const Surah = () => {
 							<img className='bismillah' src={bismillah} alt='bismillah' />
 						</div>
 					</div>
-					<div>
+					<div className='surah__list' >
 						{surah?.ayahs?.map((el) => (
 							<div key={el.number}>
 								<div className='ayah__bar'>

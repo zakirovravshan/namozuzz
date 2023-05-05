@@ -3,6 +3,19 @@ html {
     height: 100%;
 }
 
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(107deg, rgb(13, 198, 180) 8.1%, rgb(33, 198, 138) 79.5%);
+
+}
+
 *,
 *::after,
 *::before {
@@ -40,7 +53,7 @@ img {
 
 main {
     flex-grow: 1;
-    
+
 
 }
 

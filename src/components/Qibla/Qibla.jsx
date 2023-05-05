@@ -18,10 +18,11 @@ export const Qibla = () => {
 						<p style={{ color: '#fff' }} className='surah__title'>
 							Applications
 						</p>
+						<p style={{ color: 'transparent' }}>.</p>
 					</div>
 
 					<ul className='qibla__list'>
-						<li className='qibla__item'>
+						<li className='qibla__items'>
 							<Link to='/'>
 								<div className='card__app'>
 									<h3 className='card__title'>Tongi Zikrlar</h3>
@@ -41,7 +42,7 @@ export const Qibla = () => {
 								</div>
 							</Link>
 						</li>
-						<li className='qibla__item'>
+						<li className='qibla__items'>
 							<Link to='/'>
 								<div className='card__app'>
 									<h3 className='card__title'>Tungi Zikrlar</h3>
@@ -61,7 +62,7 @@ export const Qibla = () => {
 								</div>
 							</Link>
 						</li>
-						<li className='qibla__item'>
+						<li className='qibla__items'>
 							<Link to='/'>
 								<div className='card__app'>
 									<h3 className='card__title'>Kun Hadisi </h3>
@@ -81,7 +82,7 @@ export const Qibla = () => {
 								</div>
 							</Link>
 						</li>
-						<li className='qibla__item'>
+						<li className='qibla__items'>
 							<div className='card__app'>
 								<h2>Theme</h2>
 								<Theme>
