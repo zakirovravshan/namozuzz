@@ -1,9 +1,8 @@
-import { useEffect, useState } from 'react';
 import { Theme } from '../Theme/Theme';
 import './Qibla.css';
 import { Link, useNavigate } from 'react-router-dom';
-import { BiSearchAlt } from 'react-icons/bi';
 import { BiArrowBack } from 'react-icons/bi';
+import { motion } from 'framer-motion';
 
 export const Qibla = () => {
 	const navigate = useNavigate();
@@ -22,7 +21,15 @@ export const Qibla = () => {
 					</div>
 
 					<ul className='qibla__list'>
-						<li className='qibla__items'>
+						<motion.li
+							initial={{ opacity: 0, scale: 0.5 }}
+							animate={{ opacity: 1, scale: 1 }}
+							transition={{
+								duration: 1,
+								delay: 0.01,
+								ease: [0, 1, 0.2, 1.01],
+							}}
+							className='qibla__items'>
 							<Link to='/morning'>
 								<div className='card__app'>
 									<h3 className='card__title'>Tongi Zikrlar</h3>
@@ -41,9 +48,17 @@ export const Qibla = () => {
 									</div>
 								</div>
 							</Link>
-						</li>
-						<li className='qibla__items'>
-							<Link to='/'>
+						</motion.li>
+						<motion.li
+							initial={{ opacity: 0, scale: 0.5 }}
+							animate={{ opacity: 1, scale: 1 }}
+							transition={{
+								duration: 1,
+								delay: 0.01,
+								ease: [0, 1, 0.2, 1.01],
+							}}
+							className='qibla__items'>
+							<Link to='/evening'>
 								<div className='card__app'>
 									<h3 className='card__title'>Tungi Zikrlar</h3>
 									<div className='card__arrow'>
@@ -61,8 +76,16 @@ export const Qibla = () => {
 									</div>
 								</div>
 							</Link>
-						</li>
-						<li className='qibla__items'>
+						</motion.li>
+						<motion.li
+							initial={{ opacity: 0, scale: 0.5 }}
+							animate={{ opacity: 1, scale: 1 }}
+							transition={{
+								duration: 1,
+								delay: 0.01,
+								ease: [0, 1, 0.2, 1.01],
+							}}
+							className='qibla__items'>
 							<Link to='/'>
 								<div className='card__app'>
 									<h3 className='card__title'>Kun Hadisi </h3>
@@ -81,8 +104,16 @@ export const Qibla = () => {
 									</div>
 								</div>
 							</Link>
-						</li>
-						<li className='qibla__items'>
+						</motion.li>
+						<motion.li
+							initial={{ opacity: 0, scale: 0.5 }}
+							animate={{ opacity: 1, scale: 1 }}
+							transition={{
+								duration: 1,
+								delay: 0.01,
+								ease: [0, 1, 0.2, 1.01],
+							}}
+							className='qibla__items'>
 							<div className='card__app'>
 								<h2>Theme</h2>
 								<Theme>
@@ -101,8 +132,16 @@ export const Qibla = () => {
 									</div>
 								</Theme>
 							</div>
-						</li>
-						<li className='qibla__items'>
+						</motion.li>
+						<motion.li
+							initial={{ opacity: 0, scale: 0.5 }}
+							animate={{ opacity: 1, scale: 1 }}
+							transition={{
+								duration: 1,
+								delay: 0.01,
+								ease: [0, 1, 0.2, 1.01],
+							}}
+							className='qibla__items'>
 							<Link to='/'>
 								<div className='card__app'>
 									<h3 className='card__title'>Rejalar </h3>
@@ -121,7 +160,7 @@ export const Qibla = () => {
 									</div>
 								</div>
 							</Link>
-						</li>
+						</motion.li>
 					</ul>
 				</div>
 			</div>

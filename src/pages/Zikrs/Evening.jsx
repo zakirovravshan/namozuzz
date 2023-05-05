@@ -1,9 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BiArrowBack } from 'react-icons/bi';
+import { ZikrAudio } from '../../components/ZikrAudio';
+import aduio from '../../assets/audios/tungi.mp3';
 
-export const Morning = () => {
-	const tongizikrlar = [
+export const Evening = () => {
+	const tungizikrlar = [
 		{
 			id: 1,
 			translation: `Мы дожили до утра, и этим утром вся власть, и вся хвала принадлежит Аллаху, и нет божества, достойного поклонения, кроме Аллаха, Единого, у Которого нет сотоварища. 
@@ -92,15 +94,16 @@ export const Morning = () => {
 		<div>
 			<div className='surah_header'>
 				<button className='back__button' onClick={() => navigate(-1)}>
-					<BiArrowBack color='white' size={'28px'} />
+					<BiArrowBack color='#03AA77' size={'28px'} />
 				</button>
-				<p style={{ color: '#fff' }} className='surah__title'>
-					Tongi Zikrlar
+				<p style={{ color: '#03AA77' }} className='surah__title'>
+					Tungi Zikrlar
 				</p>
 				<p style={{ color: 'transparent' }}>.</p>
 			</div>
 			<div className='surah__list' style={{ padding: '120px 30px' }}>
-				{tongizikrlar.map((el) => (
+				<ZikrAudio mp3={aduio} />
+				{tungizikrlar.map((el) => (
 					<div key={el.id}>
 						<div className='ayah__bar'>
 							<div className='bar__number'>
