@@ -71,6 +71,9 @@ export const Quran = () => {
 					{surah.length
 						? surah.map((el) => (
 								<Link
+									onClick={(evt) => {
+										console.log(evt.target.matches('.quran__item'));
+									}}
 									key={el.number}
 									className='quran__item__link'
 									to={`/quran/surah/${el.number}`}>

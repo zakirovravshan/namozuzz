@@ -30,7 +30,7 @@ export const Qibla = () => {
 								ease: [0, 1, 0.2, 1.01],
 							}}
 							className='qibla__items'>
-							<Link to='/morning'>
+							<Link style={{ textDecoration: 'none' }} to='/morning'>
 								<div className='card__app'>
 									<h3 className='card__title'>Tongi Zikrlar</h3>
 									<div className='card__arrow'>
@@ -58,7 +58,7 @@ export const Qibla = () => {
 								ease: [0, 1, 0.2, 1.01],
 							}}
 							className='qibla__items'>
-							<Link to='/evening'>
+							<Link style={{ textDecoration: 'none' }} to='/evening'>
 								<div className='card__app'>
 									<h3 className='card__title'>Tungi Zikrlar</h3>
 									<div className='card__arrow'>
@@ -86,7 +86,7 @@ export const Qibla = () => {
 								ease: [0, 1, 0.2, 1.01],
 							}}
 							className='qibla__items'>
-							<Link to='/'>
+							<Link style={{ textDecoration: 'none' }} to='/'>
 								<div className='card__app'>
 									<h3 className='card__title'>Kun Hadisi </h3>
 									<div className='card__arrow'>
@@ -115,7 +115,7 @@ export const Qibla = () => {
 							}}
 							className='qibla__items'>
 							<div className='card__app'>
-								<h2>Theme</h2>
+								<h3 className='card__title'>Theme </h3>
 								<Theme>
 									<div className='card__arrow'>
 										<svg
@@ -142,7 +142,7 @@ export const Qibla = () => {
 								ease: [0, 1, 0.2, 1.01],
 							}}
 							className='qibla__items'>
-							<Link to='/'>
+							<Link style={{ textDecoration: 'none' }} to='/'>
 								<div className='card__app'>
 									<h3 className='card__title'>Rejalar </h3>
 									<div className='card__arrow'>

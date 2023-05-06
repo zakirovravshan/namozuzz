@@ -139,6 +139,10 @@ button {
     -webkit-tap-highlight-color: transparent;
 }
 
+::selection {
+    background-color: transparent;
+}
+
 .header {
     margin-top: 10px;
     display: flex;
