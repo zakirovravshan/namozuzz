@@ -115,57 +115,65 @@ export const Evening = () => {
 		<div style={{ paddingBottom: '80px' }}>
 			<div className='surah_header'>
 				<button className='back__button' onClick={() => navigate(-1)}>
-					<BiArrowBack color='#03AA77' size={'28px'} />
+					<BiArrowBack color='#fff' size={'28px'} />
 				</button>
-				<p style={{ color: '#03AA77' }} className='surah__title'>
+				<p style={{ color: '#fff' }} className='surah__title'>
 					Tungi Zikrlar
 				</p>
 				<p style={{ color: 'transparent' }}>.</p>
 			</div>
 
-			<div className='surah__list' style={{ padding: '80px 30px' }}>
+			<div className='surah__list' style={{ padding: '80px 0px' , backgroundColor:"#1f4273d4" }}>
 				<h2
 					style={{
 						margin: '0px auto',
 						textAlign: 'center',
-						color: '#03AA77',
+						color: '#fff',
 						marginBottom: '20px',
 						fontSize: '20px',
 					}}>
 					بِسۡمِ ٱللَّهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِیمِ
 				</h2>
 				<ZikrAudio mp3={aduio} />
-				{tongizikrlar.map((el) => (
-					<motion.div
-						initial={{ opacity: 0, scale: 0.5 }}
-						animate={{ opacity: 1, scale: 1 }}
-						transition={{
-							duration: 1,
-							delay: 0.01,
-							ease: [0, 1, 0.2, 1.01],
-						}}
-						style={{ marginBottom: '20px' }}
-						key={el.id}>
-						<div className='ayah__bar'>
-							<div className='bar__number'>
-								<p className='bar__text'>{el.id}</p>
+				<div
+					style={{
+						backgroundColor: '#fff',
+						padding: '30px 20px',
+						borderTopLeftRadius: '30px',
+						borderTopRightRadius: '30px	',
+					}}>
+					{tongizikrlar.map((el) => (
+						<motion.div
+							initial={{ opacity: 0, scale: 0.5 }}
+							animate={{ opacity: 1, scale: 1 }}
+							transition={{
+								duration: 1,
+								delay: 0.01,
+								ease: [0, 1, 0.2, 1.01],
+							}}
+							style={{ marginBottom: '20px' }}
+							key={el.id}>
+							<div className='ayah__bar'>
+								<div className='bar__number'>
+									<p className='bar__text'>{el.id}</p>
+								</div>
+								<div
+									style={{
+										width: '70px',
+										display: 'flex',
+										alignItems: 'center',
+										justifyContent: 'space-between',
+									}}>
+									{/* <Audios ayahnumber={el.number} /> */}
+								</div>
 							</div>
-							<div
-								style={{
-									width: '70px',
-									display: 'flex',
-									alignItems: 'center',
-									justifyContent: 'space-between',
-								}}>
-								{/* <Audios ayahnumber={el.number} /> */}
-							</div>
-						</div>
-						<p className='bar__ar'>{el.arabic}</p>
-						<p className='bar__tr' style={{ textAlign: 'justify' }}>
-							{el.translation}
-						</p>
-					</motion.div>
-				))}
+							<p className='bar__ar'>{el.arabic}</p>
+							<p className='bar__tr' style={{ textAlign: 'justify' }}>
+								{el.translation}
+							</p>
+						</motion.div>
+					))}
+				</div>
 			</div>
 		</div>
 	);
