@@ -4,6 +4,7 @@ import { BiArrowBack } from 'react-icons/bi';
 import { ZikrAudio } from '../../components/ZikrAudio';
 import aduio from '../../assets/audios/tongi.mp3';
 import { motion } from 'framer-motion';
+import './Zikrs.css';
 
 export const Morning = () => {
 	const tongizikrlar = [
@@ -112,27 +113,35 @@ export const Morning = () => {
 		<div>
 			<div className='surah_header'>
 				<button className='back__button' onClick={() => navigate(-1)}>
-					<BiArrowBack color='#03AA77' size={'28px'} />
+					<BiArrowBack color='#fff' size={'28px'} />
 				</button>
-				<p style={{ color: '#03AA77' }} className='surah__title'>
+				<p style={{ color: '#fff' }} className='surah__title'>
 					Tongi Zikrlar
 				</p>
 				<p style={{ color: 'transparent' }}>.</p>
 			</div>
 
-			<div className='surah__list' style={{ padding: '80px 0px' , backgroundColor:"#effa8fa5" }}>
+			<div
+				className='surah__list__day'
+				style={{ padding: '80px 0px', backgroundColor: '#effa8fa5' }}>
 				<h2
 					style={{
 						margin: '0px auto',
 						textAlign: 'center',
-						color: '#03AA77',
+						color: '#fff',
 						marginBottom: '20px',
 						fontSize: '20px',
 					}}>
 					بِسۡمِ ٱللَّهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِیمِ
 				</h2>
 				<ZikrAudio mp3={aduio} />
-				<div style={{ backgroundColor: '#fff', padding:"30px 20px" , borderTopLeftRadius:"30px" , borderTopRightRadius:"30px	" }}>
+				<div
+					style={{
+						backgroundColor: '#fff',
+						padding: '30px 20px',
+						borderTopLeftRadius: '30px',
+						borderTopRightRadius: '30px	',
+					}}>
 					{tongizikrlar.map((el) => (
 						<motion.div
 							initial={{ opacity: 0, scale: 0.5 }}

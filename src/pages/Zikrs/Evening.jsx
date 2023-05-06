@@ -123,7 +123,7 @@ export const Evening = () => {
 				<p style={{ color: 'transparent' }}>.</p>
 			</div>
 
-			<div className='surah__list' style={{ padding: '80px 0px' , backgroundColor:"#1f4273d4" }}>
+			<div className='surah__list__evening' style={{ padding: '80px 0px' , backgroundColor:"#1f4273d4" }}>
 				<h2
 					style={{
 						margin: '0px auto',
