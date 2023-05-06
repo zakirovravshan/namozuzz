@@ -122,7 +122,7 @@ export const Morning = () => {
 
 			<div className='surah__list' style={{ padding: '80px 30px' }}>
 				<h2
-					style={{ margin: '0px auto', textAlign: 'center', color: '#03AA77', marginBottom:"20px" }}>
+					style={{ margin: '0px auto', textAlign: 'center', color: '#03AA77', marginBottom:"20px" , fontSize:"20px" }}>
 					بِسۡمِ ٱللَّهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِیمِ
 				</h2>
 				<ZikrAudio mp3={aduio} />

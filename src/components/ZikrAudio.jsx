@@ -34,9 +34,9 @@ export const ZikrAudio = ({ mp3 }) => {
 				onClick={() => handleButtonClick()}
 				className='bar__copy__button'>
 				{isPlaying ? (
-					<BsPauseFill size={'20px'} color='#fff' />
+					<BsPauseFill size={'25px'} color='#fff' />
 				) : (
-					<FaPlay size={'15px'} color='#fff' />
+					<FaPlay size={'20px'} color='#fff' />
 				)}
 			</button>
 			<audio ref={audioRef} src={audio} onEnded={handleEnded} />
