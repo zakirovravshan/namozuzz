@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BiArrowBack } from 'react-icons/bi';
 import { ZikrAudio } from '../../components/ZikrAudio';
-import aduio from '../../assets/audios/tongi.mp3';
+import aduio from '../../assets/audios/tungi.mp3';
 import { motion } from 'framer-motion';
 
 export const Evening = () => {
