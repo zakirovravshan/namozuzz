@@ -123,7 +123,7 @@ export const Morning = () => {
 
 			<div
 				className='surah__list__day'
-				style={{ padding: '80px 0px', backgroundColor: '#effa8fa5' }}>
+				style={{ padding: '80px 0px', backgroundColor: '#e6be48ce' }}>
 				<h2
 					style={{
 						margin: '0px auto',

@@ -6,6 +6,7 @@ import { Link, Navigate, useNavigate } from 'react-router-dom';
 import back from '../../assets/icons/back.svg';
 import { BiSearchAlt } from 'react-icons/bi';
 import { BiArrowBack } from 'react-icons/bi';
+import { Search } from '../Search/Search';
 
 export const Quran = () => {
 	const [randomNumber, setRandomNumber] = useState(
@@ -52,9 +53,7 @@ export const Quran = () => {
 					<p style={{ color: '#fff' }} className='surah__title'>
 						Al-Quran
 					</p>
-					<button style={{ backgroundColor: 'transparent', border: 'none' }}>
-						<BiSearchAlt color='white' size={'28px'} />
-					</button>
+					<Search />
 				</div>
 
 				<ul className='quran__list'>

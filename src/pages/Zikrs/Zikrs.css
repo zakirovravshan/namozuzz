@@ -1,15 +1,3 @@
 .surah__list__day {
-    background-image: url("../../assets/images/Weather\ App\ Background\ Image\ Free\ day.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top center;
-    height: 30%;
-}
-
-.surah__list__evening {
-    background-image: url("../../assets/images/Weather\ App\ Background\ Image\ Free\ night.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top center;
-    height: 30%;
+    background: linear-gradient(109.6deg, rgba(255, 220, 47, 0.365) 11.2%, rgba(245, 253, 0, 0.352) 100.2%);
 }
