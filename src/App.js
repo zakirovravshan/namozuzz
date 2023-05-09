@@ -2,12 +2,13 @@ import Main from './pages/Main.js/Main';
 import { Routes, Route, Router } from 'react-router-dom';
 import Settings from './pages/Settings/Settings';
 import { Bar } from './components/Bar/Bar';
-import { Qibla } from './components/Qibla/Qibla';
+import { Apps } from './components/Apps/Apps';
 import { Quran } from './components/Quran/Quran';
 import VibrationButton from './components/Vibration';
 import { Surah } from './pages/Sura/Surah';
 import { Morning } from './pages/Zikrs/Morning';
 import { Evening } from './pages/Zikrs/Evening';
+import { Qibla } from './pages/Qibla/Qibla';
 
 function App() {
 	return (
@@ -18,9 +19,10 @@ function App() {
 				<Route path='/settings' element={<Settings />} />
 				<Route path='/quran' element={<Quran />} />
 				<Route path='/quran/surah/:number' element={<Surah />} />
-				<Route path='/qibla' element={<Qibla />} />
+				<Route path='/apps' element={<Apps />} />
 				<Route path='/morning' element={<Morning />} />
 				<Route path='/evening' element={<Evening />} />
+				<Route path='/qibla' element={<Qibla />} />
 			</Routes>
 			<Bar />
 		</div>

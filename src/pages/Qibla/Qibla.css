@@ -1,0 +1,17 @@
+.qibla__frame {
+    margin-bottom: 110px;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    align-content: start;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    background: rgba(255, 255, 255, 0.906);
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(13.1px);
+    -webkit-backdrop-filter: blur(13.1px);
+}
