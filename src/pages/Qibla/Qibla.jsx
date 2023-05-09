@@ -24,7 +24,7 @@ export const Qibla = () => {
 						<div className='qibla__frame'>
 							<iframe
 								className='qibla__frame'
-								src='https://qiblafinder.withgoogle.com/intl/ru/desktop'
+								src='https://qiblafinder.withgoogle.com/intl/en/onboarding'
 								width='100%'
 								height='100%'
 								frameBorder={'none'}></iframe>
