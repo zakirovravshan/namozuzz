@@ -352,3 +352,69 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    outline: none;
+    padding: 18px 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    color: #fff;
+    font-family: 'Poppins';
+}
+
+.input::placeholder {
+    color: transparent;
+}
+
+.input:focus::placeholder {
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: #fff;
+}
+
+.input:focus,
+.input:not(:placeholder-shown) {
+    background-color: transparent;
+    border: 1px solid #fff;
+    width: 150px;
+    cursor: none;
+    padding: 18px 5px 18px 10px;
+}
+
+.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border-radius: 10px;
+    z-index: -1;
+    fill: #fff;
+    border: 1px solid transparent;
+}
+
+.input:hover+.icon {
+
+    transition: .2s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.input:focus+.icon,
+.input:not(:placeholder-shown)+.icon {
+    z-index: 0;
+    background-color: transparent;
+    border: none;
+    transition: all .3s ease-in-out;
+}
