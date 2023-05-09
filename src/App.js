@@ -12,7 +12,7 @@ import { Evening } from './pages/Zikrs/Evening';
 function App() {
 	return (
 		<div>
-			
+			<input style={{ display: 'none' }} type='text' />
 			<Routes>
 				<Route index path='/' element={<Main />} />
 				<Route path='/settings' element={<Settings />} />

@@ -89,7 +89,7 @@ export const Surah = () => {
 							<img className='bismillah' src={bismillah} alt='bismillah' />
 						</div>
 					</div>
-					<div className='surah__list' >
+					<div className='surah__list'>
 						{surah?.ayahs?.map((el) => (
 							<div key={el.number}>
 								<div className='ayah__bar'>
@@ -103,7 +103,7 @@ export const Surah = () => {
 											alignItems: 'center',
 											justifyContent: 'space-between',
 										}}>
-										<Audios ayahnumber={el.number} />
+										<Audios />
 										<button
 											className='bar__copy__button'
 											onClick={() => {

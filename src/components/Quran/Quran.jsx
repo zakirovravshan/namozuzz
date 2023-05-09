@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './Quran.css';
 import { motion } from 'framer-motion';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
@@ -16,7 +16,7 @@ export const Quran = () => {
 	const [quran, setQuran] = useState({});
 	const [surah, setSurah] = useState({});
 	const [all, setAll] = useState({});
-	
+	const searchRef = useRef();
 
 	// const getQuran = (number) => {
 	// 	axios
@@ -42,9 +42,9 @@ export const Quran = () => {
 			})
 			.catch((error) => console.log(error));
 	};
-
 	const filterSurah = (evt) => {
-		console.log(evt.target.value);
+		console.log(searchRef.current.value);
+		// console.log(evt.target.value);
 		const filteredSurahs = surah.filter(
 			(surah) =>
 				surah.name.toLowerCase().includes(evt.target.value.toLowerCase()) ||
@@ -79,11 +79,12 @@ export const Quran = () => {
 					</p>
 					<div className='input-container'>
 						<input
+							ref={searchRef}
 							placeholder='Search Sura...'
 							className='input'
 							name='text'
 							type='text'
-							onChange={(e) => filterSurah(e)}
+							onChange={(evt) => filterSurah(evt)}
 						/>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
