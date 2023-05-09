@@ -86,7 +86,7 @@ export const Apps = () => {
 								ease: [0, 1, 0.2, 1.01],
 							}}
 							className='qibla__items'>
-							<Link style={{ textDecoration: 'none' }} to='/'>
+							<Link style={{ textDecoration: 'none' }} to='/hadis'>
 								<div className='card__app'>
 									<h3 className='card__title'>Kun Hadisi </h3>
 									<div className='card__arrow'>
@@ -172,7 +172,7 @@ export const Apps = () => {
 							className='qibla__items'>
 							<Link style={{ textDecoration: 'none' }} to='/qibla'>
 								<div className='card__app'>
-									<h3 className='card__title'>Qiblani </h3>
+									<h3 className='card__title'>Qiblani aniqlash </h3>
 									<div className='card__arrow'>
 										<svg
 											xmlns='http://www.w3.org/2000/svg'
