@@ -22,20 +22,12 @@ export const Qibla = () => {
 						</div>
 
 						<div className='qibla__frame'>
-							{/* <iframe
+							<iframe
 								className='qibla__frame'
 								src='https://qiblafinder.withgoogle.com/intl/en/onboarding'
 								width='100%'
 								height='100%'
-								frameBorder={'none'}></iframe> */}
-							<iframe
-								width='560'
-								height='315'
-								src='https://www.youtube.com/embed/3loPeQnJKk4'
-								title='YouTube video player'
-								frameborder='0'
-								allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-								allowfullscreen></iframe>
+								frameBorder={'none'}></iframe>
 						</div>
 					</div>
 				</div>
