@@ -24,6 +24,14 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.surah__list {
+    padding: 5px;
+    height: 100vh;
+    overflow: scroll;
+    padding-bottom: 400px;
+    
+}
+
 
 
 .surah__title {
