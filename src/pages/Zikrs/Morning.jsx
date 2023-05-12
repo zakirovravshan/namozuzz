@@ -108,8 +108,6 @@ export const Morning = () => {
 		},
 	];
 
-	
-
 	const navigate = useNavigate();
 	return (
 		<div>
@@ -139,8 +137,11 @@ export const Morning = () => {
 				<ZikrAudio mp3={aduio} />
 				<div
 					style={{
+						height: '100vh',
+						overflow: 'scroll',
 						backgroundColor: '#fff',
 						padding: '30px 20px',
+						paddingBottom: '220px',
 						borderTopLeftRadius: '30px',
 						borderTopRightRadius: '30px	',
 					}}>
@@ -176,8 +177,6 @@ export const Morning = () => {
 						</motion.div>
 					))}
 				</div>
-
-			
 			</div>
 		</div>
 	);

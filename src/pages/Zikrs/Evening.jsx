@@ -123,7 +123,9 @@ export const Evening = () => {
 				<p style={{ color: 'transparent' }}>.</p>
 			</div>
 
-			<div className='surah__list__evening' style={{ padding: '80px 0px' , backgroundColor:"#1f4273d4" }}>
+			<div
+				className='surah__list__evening'
+				style={{ padding: '80px 0px', backgroundColor: '#1f4273d4' }}>
 				<h2
 					style={{
 						margin: '0px auto',
@@ -137,8 +139,11 @@ export const Evening = () => {
 				<ZikrAudio mp3={aduio} />
 				<div
 					style={{
+						height: '100vh',
+						overflow: 'scroll',
 						backgroundColor: '#fff',
 						padding: '30px 20px',
+						paddingBottom: '220px',
 						borderTopLeftRadius: '30px',
 						borderTopRightRadius: '30px	',
 					}}>

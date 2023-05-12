@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import moment from 'moment';
 import axios from 'axios';
 import { color } from 'framer-motion';
+import { Loader } from '../../components/Loader/Loader';
 
 export const Hadis = () => {
 	const [random, setRandom] = useState(null);
@@ -132,7 +133,7 @@ export const Hadis = () => {
 								</p>
 							</div>
 						) : (
-							''
+							<Loader />
 						)}
 					</div>
 				</div>
