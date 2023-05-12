@@ -142,7 +142,7 @@ export const Apps = () => {
 								ease: [0, 1, 0.2, 1.01],
 							}}
 							className='qibla__items'>
-							<Link style={{ textDecoration: 'none' }} to='/'>
+							<Link style={{ textDecoration: 'none' }} to='/todo'>
 								<div className='card__app'>
 									<h3 className='card__title'>Rejalar </h3>
 									<div className='card__arrow'>

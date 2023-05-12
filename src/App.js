@@ -10,6 +10,7 @@ import { Morning } from './pages/Zikrs/Morning';
 import { Evening } from './pages/Zikrs/Evening';
 import { Qibla } from './pages/Qibla/Qibla';
 import { Hadis } from './pages/Hadis/Hadis';
+import { Todo } from './pages/Todo/Todo';
 
 function App() {
 	return (
@@ -25,6 +26,7 @@ function App() {
 				<Route path='/evening' element={<Evening />} />
 				<Route path='/qibla' element={<Qibla />} />
 				<Route path='/hadis' element={<Hadis />} />
+				<Route path='/todo' element={<Todo />} />
 			</Routes>
 			<Bar />
 		</div>
