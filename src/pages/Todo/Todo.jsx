@@ -14,7 +14,7 @@ export const Todo = () => {
 							<BiArrowBack color='white' size={'28px'} />
 						</button>
 						<p style={{ color: '#fff' }} className='surah__title'>
-							Kunlik hadis
+							Rejalar
 						</p>
 						<p style={{ color: 'transparent' }}>.</p>
 					</div>
