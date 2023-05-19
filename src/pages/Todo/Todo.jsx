@@ -3,6 +3,7 @@ import './Todo.css';
 import { useNavigate } from 'react-router-dom';
 import { BiArrowBack } from 'react-icons/bi';
 import { MdDeleteOutline } from 'react-icons/md';
+import { MdOutlineAdd } from 'react-icons/md';
 import { Loader } from '../../components/Loader/Loader';
 
 export const Todo = () => {
@@ -134,8 +135,8 @@ export const Todo = () => {
 							style={{
 								backgroundColor: '#69d4ad',
 								fontSize: '24px',
-								width: '50px',
-								height: '50px',
+								width: '65px',
+								height: '65px',
 								borderRadius: '50%',
 								border: 'none',
 								position: 'absolute',
@@ -143,9 +144,12 @@ export const Todo = () => {
 								right: '5%',
 								color: '#fff',
 								boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px 0px',
+								display: 'flex',
+								alignItems: 'center',
+								justifyContent: 'center',
 							}}
 							onClick={addTodo}>
-							+
+							<MdOutlineAdd size={"30px"}  />
 						</button>
 					</div>
 				</div>
