@@ -139,7 +139,7 @@ export const Todo = () => {
 								borderRadius: '50%',
 								border: 'none',
 								position: 'absolute',
-								bottom: '35%',
+								bottom: '20%',
 								right: '5%',
 								color: '#fff',
 								boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px 0px',
