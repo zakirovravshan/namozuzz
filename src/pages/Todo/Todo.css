@@ -76,6 +76,7 @@
     top: auto;
     background: var(--check);
     border-radius: 2px;
+    margin-top: 5px;
 }
 
 #checklist input[type="checkbox"]::before {
@@ -96,6 +97,7 @@
 
 #checklist input[type="checkbox"]:checked::after {
     animation: check-02 0.4s ease forwards;
+
 }
 
 #checklist input[type="checkbox"]:checked+label {
@@ -110,6 +112,7 @@
 
 #checklist input[type="checkbox"]:checked+label::after {
     animation: firework 0.5s ease forwards 0.1s;
+ 
 }
 
 @keyframes move {
