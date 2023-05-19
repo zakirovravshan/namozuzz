@@ -80,6 +80,7 @@ export const Todo = () => {
 								todos.map((todo) => (
 									<li
 										key={todo.id}
+										disabled={todo.completed}
 										style={{
 											width: '100%',
 											display: 'flex',
@@ -138,8 +139,8 @@ export const Todo = () => {
 								borderRadius: '50%',
 								border: 'none',
 								position: 'absolute',
-								bottom: '230px',
-								right: '20px',
+								bottom: '35%',
+								right: '5%',
 								color: '#fff',
 								boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px 0px',
 							}}
