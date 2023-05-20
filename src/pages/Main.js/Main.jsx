@@ -52,7 +52,7 @@ const Main = () => {
 	// 			} else {
 	// 				console.log('ishlamayabdi');
 	// 			}
-	// 		} 
+	// 		}
 	// 	});
 	// };
 	// function requestNotificationPermission() {
@@ -122,10 +122,10 @@ const Main = () => {
 										delay: 0.1,
 										ease: [0, 1, 0.2, 1.01],
 									}}>
-									<p className='taqvim__item__text'>Saharlik</p>
 									<p className='taqvim__item__text__time'>
 										{prayerTime?.times?.tong_saharlik}
 									</p>
+									<p className='taqvim__item__text'>Saharlik</p>
 								</motion.li>
 								<motion.li
 									className='taqvim__item'
@@ -136,10 +136,10 @@ const Main = () => {
 										delay: 0.1,
 										ease: [0, 1, 0.2, 1.01],
 									}}>
-									<p className='taqvim__item__text'>Quyosh</p>
 									<p className='taqvim__item__text__time'>
 										{prayerTime?.times?.quyosh}
 									</p>
+									<p className='taqvim__item__text'>Quyosh</p>
 								</motion.li>
 								<motion.li
 									className='taqvim__item'
@@ -150,10 +150,10 @@ const Main = () => {
 										delay: 0.1,
 										ease: [0, 1, 0.2, 1.01],
 									}}>
-									<p className='taqvim__item__text'>Peshin</p>
 									<p className='taqvim__item__text__time'>
 										{prayerTime?.times?.peshin}
 									</p>
+									<p className='taqvim__item__text'>Peshin</p>
 								</motion.li>
 								<motion.li
 									className='taqvim__item'
@@ -164,10 +164,10 @@ const Main = () => {
 										delay: 0.1,
 										ease: [0, 1, 0.2, 1.01],
 									}}>
-									<p className='taqvim__item__text'>Asr</p>
 									<p className='taqvim__item__text__time'>
 										{prayerTime?.times?.asr}
 									</p>
+									<p className='taqvim__item__text'>Asr</p>
 								</motion.li>
 								<motion.li
 									className='taqvim__item'
@@ -178,10 +178,10 @@ const Main = () => {
 										delay: 0.1,
 										ease: [0, 1, 0.2, 1.01],
 									}}>
-									<p className='taqvim__item__text'>Shom</p>
 									<p className='taqvim__item__text__time'>
 										{prayerTime?.times?.shom_iftor}
 									</p>
+									<p className='taqvim__item__text'>Shom</p>
 								</motion.li>
 								<motion.li
 									className='taqvim__item'
@@ -192,11 +192,32 @@ const Main = () => {
 										delay: 0.1,
 										ease: [0, 1, 0.2, 1.01],
 									}}>
-									<p className='taqvim__item__text'>Hufton</p>
 									<p className='taqvim__item__text__time'>
 										{prayerTime?.times?.hufton}
 									</p>
+									<p className='taqvim__item__text'>Hufton</p>
 								</motion.li>
+								<motion.div
+									style={{
+										width: '95%',
+										border: '1px solid #65cfa8',
+										borderRadius: '16px',
+										padding: '5px',
+										textAlign: 'center',
+									}}
+									initial={{ opacity: 0, scale: 0.5 }}
+									animate={{ opacity: 1, scale: 1 }}
+									transition={{
+										duration: 1,
+										delay: 0.1,
+										ease: [0, 1, 0.2, 1.01],
+									}}>
+									<h3 className='taqvim__item__text'>Ro'za vaqtlari</h3>
+									<p className='taqvim__item__text__time'>
+										{prayerTime?.times?.tong_saharlik} -
+										{prayerTime?.times?.shom_iftor}
+									</p>
+								</motion.div>
 							</ul>
 						</div>
 					</section>

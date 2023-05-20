@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
     height: 100%;
-    overflow: hidden    ;
+    overflow: hidden;
 }
 
 
@@ -164,10 +164,9 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     flex-wrap: wrap;
     border-radius: 20px;
-    max-width: 300px;
+    max-width: 310px;
     gap: 10px;
     background-color: #ffffff;
 
@@ -187,14 +186,17 @@ p {
 .taqvim__item {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 45%;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
     font-weight: 500;
     padding: 10px;
     border-radius: 16px;
-    border: 1px dotted #03AA77;
+    border: 1px dashed #03AA77;
+
 
 }
 
@@ -255,12 +257,13 @@ p {
 
 .taqvim__item__text {
 
-    background: linear-gradient(107deg, rgb(13, 198, 180) 8.1%, rgb(33, 198, 138) 79.5%);
-
+    /* background: linear-gradient(107deg, rgb(13, 198, 180) 8.1%, rgb(33, 198, 138) 79.5%);
+    
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
     font-family: 'Poppins', sans-serif;
-    font-size: 22px;
+    font-size: 14px;
+    color: #d7b481;
     font-weight: 600;
 
 }
