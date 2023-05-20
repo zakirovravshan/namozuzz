@@ -167,7 +167,7 @@ button {
     flex-wrap: wrap;
     border-radius: 20px;
     max-width: 310px;
-    gap: 10px;
+    gap: 12px;
     background-color: #ffffff;
 
 
@@ -195,7 +195,7 @@ p {
     font-weight: 500;
     padding: 10px;
     border-radius: 16px;
-    border: 0.5px solid #65cfa8;
+    border: 0.7px solid #65cfa8;
 
 
 }
