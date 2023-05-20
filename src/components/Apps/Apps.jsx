@@ -2,6 +2,7 @@ import { Theme } from '../Theme/Theme';
 import './Apps.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { BiArrowBack } from 'react-icons/bi';
+import { FiSettings } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 
 export const Apps = () => {
@@ -17,7 +18,11 @@ export const Apps = () => {
 						<p style={{ color: '#fff' }} className='surah__title'>
 							Applications
 						</p>
-						<p style={{ color: 'transparent' }}>.</p>
+						<Link
+							style={{ display: 'flex', alignItems: 'center' }}
+							to={'/settings'}>
+							<FiSettings size={'22px'} color='#fff' />
+						</Link>
 					</div>
 
 					<ul className='qibla__list'>
