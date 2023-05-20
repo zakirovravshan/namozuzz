@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { BiArrowBack } from 'react-icons/bi';
 import { FiSettings } from 'react-icons/fi';
@@ -7,6 +7,13 @@ import { Theme } from '../../components/Theme/Theme';
 import './Settings';
 
 export const Settings = () => {
+	const [city, setCity] = useState('Toshkent');
+
+	const handleCity = (e) => {
+		console.log(e.target.value);
+		localStorage.setItem('city', e.target.value);
+	};
+
 	const navigate = useNavigate();
 	return (
 		<div className='qibla'>
@@ -66,16 +73,50 @@ export const Settings = () => {
 							className='setting__items'>
 							<div className='card__app'>
 								<h3 className='card__title'>City </h3>
-								<select class='form-select' aria-label='Default select example'>
-								
-									<option value='Toshkent'>Toshkent</option>
-									<option value='Samarqand'>Samarqand</option>
-									<option value='Fargona'>Fargona</option>
-									<option value='Andijon'>Andijon</option>
-									<option value='Namangan'>Namangan</option>
-									<option value='Qarshi'>Qarshi</option>
-									<option value='Xiva'>Xiva</option>
-									<option value='Andijon'>Andijon</option>
+								<select
+									onChange={handleCity}
+									class='form-select'
+									aria-label='Default select example'>
+									<option
+										selected={localStorage.getItem('city') === 'Toshkent'}
+										value='Toshkent'>
+										Toshkent
+									</option>
+									<option
+										selected={localStorage.getItem('city') === 'Samarqand'}
+										value='Samarqand'>
+										Samarqand
+									</option>
+									<option
+										selected={localStorage.getItem('city') === 'Fargona'}
+										value='Fargona'>
+										Fargona
+									</option>
+									<option
+										selected={localStorage.getItem('city') === 'Andijon'}
+										value='Andijon'>
+										Andijon
+									</option>
+									<option
+										selected={localStorage.getItem('city') === 'Namangan'}
+										value='Namangan'>
+										Namangan
+									</option>
+									<option
+										selected={localStorage.getItem('city') === 'Qarshi'}
+										value='Qarshi'>
+										Qarshi
+									</option>
+									<option
+										selected={localStorage.getItem('city') === 'Xiva'}
+										value='Xiva'>
+										Xiva
+									</option>
+									<option
+										selected={localStorage.getItem('city') === 'Andijon'}
+										value='Andijon'>
+										Andijon
+									</option>
 								</select>
 							</div>
 						</motion.li>
