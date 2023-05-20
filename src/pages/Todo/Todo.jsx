@@ -66,6 +66,63 @@ export const Todo = () => {
 						className='qibla__frame'>
 						<ul
 							style={{
+								display: 'flex',
+								alignItems: 'center',
+								justifyContent: 'center',
+								listStyle: 'none',
+								width: '100%',
+
+								borderRadius: '16px',
+								padding: '10px',
+								backgroundColor: '#fff',
+								gap: '10px',
+							}}
+							className=''>
+							<li style={{ width: '30%' }}>
+								<button
+									style={{
+										width: '100%',
+										padding: '8px',
+										borderRadius: '10px',
+										backgroundColor: '#65cfa8',
+										border: 'none',
+										color: '#fff',
+										fontFamily: 'Poppins',
+									}}>
+									All
+								</button>
+							</li>
+							<li style={{ width: '30%' }}>
+								<button
+									style={{
+										width: '100%',
+										padding: '8px',
+										borderRadius: '10px',
+										backgroundColor: '#3eb8ff',
+										border: 'none',
+										color: '#fff',
+										fontFamily: 'Poppins',
+									}}>
+									Completed
+								</button>
+							</li>
+							<li style={{ width: '30%' }}>
+								<button
+									style={{
+										width: '100%',
+										padding: '8px',
+										borderRadius: '10px',
+										backgroundColor: 'orange',
+										border: 'none',
+										color: '#fff',
+										fontFamily: 'Poppins',
+									}}>
+									Uncompleted
+								</button>
+							</li>
+						</ul>
+						<ul
+							style={{
 								width: '100%',
 								borderRadius: '30px',
 								display: 'flex',
