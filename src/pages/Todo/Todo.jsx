@@ -76,6 +76,7 @@ export const Todo = () => {
 								padding: '10px',
 								backgroundColor: '#fff',
 								gap: '10px',
+	
 							}}
 							className=''>
 							<li style={{ width: '30%' }}>
