@@ -200,11 +200,11 @@ const Main = () => {
 								<motion.div
 									style={{
 										width: '95%',
-										border: '1px solid #65cfa8',
+										border: '1.5px dashed #65cfa8',
 										borderRadius: '16px',
 										padding: '5px',
 										textAlign: 'center',
-										marginTop:"15px"
+										marginTop:"5px"
 									}}
 									initial={{ opacity: 0, scale: 0.5 }}
 									animate={{ opacity: 1, scale: 1 }}
