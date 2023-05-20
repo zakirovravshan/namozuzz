@@ -204,6 +204,7 @@ const Main = () => {
 										borderRadius: '16px',
 										padding: '5px',
 										textAlign: 'center',
+										marginTop:"15px"
 									}}
 									initial={{ opacity: 0, scale: 0.5 }}
 									animate={{ opacity: 1, scale: 1 }}
@@ -212,11 +213,11 @@ const Main = () => {
 										delay: 0.1,
 										ease: [0, 1, 0.2, 1.01],
 									}}>
-									<h3 className='taqvim__item__text'>Ro'za vaqtlari</h3>
 									<p className='taqvim__item__text__time'>
 										{prayerTime?.times?.tong_saharlik} -
 										{prayerTime?.times?.shom_iftor}
 									</p>
+									<h3 className='taqvim__item__text'>Ro'za vaqtlari</h3>
 								</motion.div>
 							</ul>
 						</div>
