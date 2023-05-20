@@ -167,7 +167,7 @@ button {
     flex-wrap: wrap;
     border-radius: 20px;
     max-width: 310px;
-    gap: 12px;
+    gap: 10px;
     background-color: #ffffff;
 
 
@@ -186,8 +186,8 @@ p {
 .taqvim__item {
     display: flex;
     align-items: center;
-    width: 45%;
-    height: 80px;
+    width: 48%;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;

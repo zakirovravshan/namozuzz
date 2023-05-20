@@ -199,7 +199,7 @@ const Main = () => {
 								</motion.li>
 								<motion.div
 									style={{
-										width: '95%',
+										width: '98%',
 										border: '1.5px dashed #65cfa8',
 										borderRadius: '16px',
 										padding: '5px',
