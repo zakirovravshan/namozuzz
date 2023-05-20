@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import moment from 'moment/moment';
 import icon from '../../assets/icons/logo192.png';
 import PrayerTimeComponent from '../../components/Timer/Timer';
+import { GrLocation } from 'react-icons/gr';
 
 const Main = () => {
 	const currentDateTime = moment(); // Предполагаем, что время намаза передается в формате 'HH:mm'
@@ -105,9 +106,18 @@ const Main = () => {
 						<p>{prayerTime?.date}</p>
 					</div>
 					<div className='city'>
-						<p style={{ border: '2px solid #65cfa8', color:"#fff" ,padding:"5px" , borderRadius:"10px" }}>
-							{' '}
+						<p
+							style={{
+								color: '#fff',
+								padding: '5px',
+								borderRadius: '10px',
+								display: 'flex',
+								alignItems: 'center',
+								justifyContent: 'space-between',
+								width: '105px',
+							}}>
 							{prayerTime?.region}
+							<GrLocation color="red" />
 						</p>
 						<p className='time'>{soat}</p>
 					</div>
