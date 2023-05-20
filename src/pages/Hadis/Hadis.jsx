@@ -88,8 +88,8 @@ export const Hadis = () => {
 								<p
 									style={{
 										position: 'absolute',
-										top: '10px',
-										right: '10px',
+										top: '2%',
+										right: '4%',
 										border: '1px solid #66cea7',
 										fontSize: '8px',
 										padding: '5px',

@@ -10,7 +10,7 @@ export const Settings = () => {
 	const [city, setCity] = useState('Toshkent');
 
 	const handleCity = (e) => {
-		console.log(e.target.value);
+	
 		localStorage.setItem('city', e.target.value);
 	};
 
@@ -74,8 +74,9 @@ export const Settings = () => {
 							<div className='card__app'>
 								<h3 className='card__title'>City </h3>
 								<select
+                
 									onChange={handleCity}
-									class='form-select'
+									class='city__select'
 									aria-label='Default select example'>
 									<option
 										selected={localStorage.getItem('city') === 'Toshkent'}
@@ -88,9 +89,9 @@ export const Settings = () => {
 										Samarqand
 									</option>
 									<option
-										selected={localStorage.getItem('city') === 'Fargona'}
-										value='Fargona'>
-										Fargona
+										selected={localStorage.getItem('city') === 'Jizzax'}
+										value='Jizzax'>
+										Jizzax
 									</option>
 									<option
 										selected={localStorage.getItem('city') === 'Andijon'}
@@ -113,9 +114,9 @@ export const Settings = () => {
 										Xiva
 									</option>
 									<option
-										selected={localStorage.getItem('city') === 'Andijon'}
-										value='Andijon'>
-										Andijon
+										selected={localStorage.getItem('city') === 'Nukus'}
+										value='Nukus'>
+										Nukus
 									</option>
 								</select>
 							</div>

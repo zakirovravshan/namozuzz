@@ -15,6 +15,7 @@ const Main = () => {
 	const [prayerTime, setPrayerTime] = useState(
 		JSON.parse(localStorage.getItem('prayerTime')),
 	);
+	const [city, setCity] = useState(localStorage.getItem('city'));
 
 	// var namoz = Object.values(prayerTime.times);
 
@@ -83,7 +84,7 @@ const Main = () => {
 
 	const getData = () => {
 		axios
-			.get('https://islomapi.uz/api/present/day?region=Toshkent')
+			.get(`https://islomapi.uz/api/present/day?region=${city}`)
 			.then((res) => {
 				localStorage.setItem('prayerTime', JSON.stringify(res.data));
 				setPrayerTime(JSON.parse(localStorage.getItem('prayerTime')));
@@ -104,7 +105,10 @@ const Main = () => {
 						<p>{prayerTime?.date}</p>
 					</div>
 					<div className='city'>
-						<p> {prayerTime?.region}</p>
+						<p style={{ border: '2px solid #65cfa8', color:"#fff" ,padding:"5px" , borderRadius:"10px" }}>
+							{' '}
+							{prayerTime?.region}
+						</p>
 						<p className='time'>{soat}</p>
 					</div>
 				</header>

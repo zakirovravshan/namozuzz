@@ -1,3 +1,7 @@
 .setting__items{
-    height: 80px;
+    height: 150px;
+}
+.city__select{
+    outline: none;
+    border: none;
 }
