@@ -86,7 +86,7 @@ export const Todo = () => {
 											width: '100%',
 											display: 'flex',
 											flexDirection: 'column',
-											border: '0.5px solid #69d4ad',
+											border: '1px solid #69d4ad',
 											borderRadius: '16px',
 											padding: '5px 10px',
 											marginBottom: '5px',
@@ -113,12 +113,23 @@ export const Todo = () => {
 													id={todo.id}
 													disabled={todo.completed}
 												/>
-												<label htmlFor={todo.id}>{todo.text}</label>
+												<label
+													style={{
+														fontFamily: 'Poppins',
+														fontSize: '16px',
+														padding: '5px',
+													}}
+													htmlFor={todo.id}>
+													{todo.text}
+												</label>
 											</div>
 											<button
 												style={{
 													border: 'none',
 													backgroundColor: 'transparent',
+													display: 'flex',
+													alignItems: 'center',
+													justifyContent: 'center',
 												}}
 												onClick={() => deleteTodo(todo.id)}>
 												<MdDeleteOutline size={'20px'} color='red' />
@@ -149,7 +160,7 @@ export const Todo = () => {
 								justifyContent: 'center',
 							}}
 							onClick={addTodo}>
-							<MdOutlineAdd size={"30px"}  />
+							<MdOutlineAdd size={'30px'} />
 						</button>
 					</div>
 				</div>
