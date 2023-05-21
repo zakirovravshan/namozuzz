@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Tasbeh.css';
 import { useState } from 'react';
 import redo from '../../assets/icons/redo.png';
@@ -7,15 +7,17 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import { Toaster, toast } from 'react-hot-toast';
-import audio from "../../assets/audios/tap.mp3"
+import audio from '../../assets/audios/tap.mp3';
 
 const Tasbeh = () => {
 	const audioRef = useRef(null);
+	const pauseRef = useRef(null);
+
 	var [counter, setCounter] = useState(localStorage.getItem('counter'));
 	var [counter2, setCounter2] = useState(localStorage.getItem('counter2'));
 	var [counter3, setCounter3] = useState(localStorage.getItem('counter3'));
 	var [counter4, setCounter4] = useState(localStorage.getItem('counter4'));
-	var [counter5, setCounter5] = useState(localStorage.getItem('counter5'));
+	var [sound, setSound] = useState(false);
 
 	var handleCount1 = () => {
 		audioRef.current.play();
@@ -138,6 +140,16 @@ const Tasbeh = () => {
 			},
 		],
 	};
+
+	useEffect(() => {
+		const sound = localStorage.getItem('sound');
+		if (sound === 'true') {
+			audioRef.current.play();
+		} else {
+			audioRef.current.pause();
+			audioRef.current.currentTime = 0;
+		}
+	}, []);
 	return (
 		<div className='tasbeh__main'>
 			<button
@@ -174,7 +186,7 @@ const Tasbeh = () => {
 							transition={{ type: 'spring', stiffness: 400, damping: 17 }}
 							className='tasbeh__button'
 							onClick={() => handleCount1()}>
-							<audio ref={audioRef} src={audio}  />
+							<audio ref={audioRef} src={audio} />
 							<p className='ar'>سُبْحَانَ اللهِ</p>
 							<p className=' ar_uz '>Subhanalloh </p>
 
@@ -205,7 +217,7 @@ const Tasbeh = () => {
 							transition={{ type: 'spring', stiffness: 400, damping: 17 }}
 							className='tasbeh__button'
 							onClick={() => handleCount2()}>
-							<audio ref={audioRef} src={audio}  />
+							<audio ref={sound ? audioRef : pauseRef} src={audio} />
 							<p className='ar_uz'>
 								Allahumma Salli Ala Muhammad Waala Ali Muhammad{' '}
 							</p>
@@ -236,7 +248,7 @@ const Tasbeh = () => {
 							transition={{ type: 'spring', stiffness: 400, damping: 17 }}
 							className='tasbeh__button'
 							onClick={() => handleCount3()}>
-							<audio ref={audioRef} src={audio}  />
+							<audio ref={audioRef} src={audio} />
 							<p className='ar_uz'>
 								Subhanallohi va bihamdihi subhanallohil aziym{' '}
 							</p>
@@ -266,7 +278,7 @@ const Tasbeh = () => {
 							transition={{ type: 'spring', stiffness: 400, damping: 17 }}
 							className='tasbeh__button'
 							onClick={() => handleCount4()}>
-							<audio ref={audioRef} src={audio}  />
+							<audio ref={audioRef} src={audio} />
 							<p className='ar_uz'>
 								La ilaha illa anta subẍanaka inni kuntu mina-ӟ-alimin
 							</p>

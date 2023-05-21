@@ -74,7 +74,7 @@
     animation: rotate 15s linear infinite;
 }
 
-@keyframes rotate {
+/* @keyframes rotate {
 
     0% {
         transform: rotate(0);
@@ -83,14 +83,14 @@
     100% {
         transform: rotate(360deg);
     }
-}
+} */
 
 /* .switch:hover */
 .moon svg {
     animation: tilt 5s linear infinite;
 }
 
-@keyframes tilt {
+/* @keyframes tilt {
 
     0% {
         transform: rotate(0deg);
@@ -107,7 +107,7 @@
     100% {
         transform: rotate(0deg);
     }
-}
+} */
 
 .input:checked+.slider {
     background-color: #183153;

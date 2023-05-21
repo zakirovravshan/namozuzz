@@ -5,6 +5,7 @@ import { FiSettings } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 import { Theme } from '../../components/Theme/Theme';
 import './Settings';
+import { Sound } from '../../components/Sound/Sound';
 
 export const Settings = () => {
 	const [city, setCity] = useState('Toshkent');
@@ -119,6 +120,20 @@ export const Settings = () => {
 										Nukus
 									</option>
 								</select>
+							</div>
+						</motion.li>
+            <motion.li
+							initial={{ opacity: 0, scale: 0.5 }}
+							animate={{ opacity: 1, scale: 1 }}
+							transition={{
+								duration: 1,
+								delay: 0.01,
+								ease: [0, 1, 0.2, 1.01],
+							}}
+							className='setting__items'>
+							<div className='card__app'>
+								<h3 className='card__title'>Tasbeh Sound </h3>
+								<Sound/>
 							</div>
 						</motion.li>
 					</ul>
