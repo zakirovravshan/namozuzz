@@ -66,7 +66,7 @@
 .card__app:hover .card__title {}
 
 .card__app:hover .card__arrow {
-    background: #111;
+    background: #d7b481;
 }
 
 .card__app:hover .card__arrow svg {
