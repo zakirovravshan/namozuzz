@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Tasbeh.css';
 import { useState } from 'react';
 import redo from '../../assets/icons/redo.png';
@@ -7,8 +7,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import { Toaster, toast } from 'react-hot-toast';
+import audio from "../../assets/audios/tap.mp3"
 
 const Tasbeh = () => {
+	const audioRef = useRef(null);
 	var [counter, setCounter] = useState(localStorage.getItem('counter'));
 	var [counter2, setCounter2] = useState(localStorage.getItem('counter2'));
 	var [counter3, setCounter3] = useState(localStorage.getItem('counter3'));
@@ -16,6 +18,7 @@ const Tasbeh = () => {
 	var [counter5, setCounter5] = useState(localStorage.getItem('counter5'));
 
 	var handleCount1 = () => {
+		audioRef.current.play();
 		if ('vibrate' in navigator) {
 			// Trigger the vibration for 200ms
 			navigator.vibrate(38);
@@ -51,6 +54,7 @@ const Tasbeh = () => {
 		setCounter(localStorage.getItem('counter'));
 	};
 	var handleCount2 = () => {
+		audioRef.current.play();
 		if (counter2 == 99) {
 			toast.success('Ma sha Alloh!');
 		}
@@ -62,6 +66,7 @@ const Tasbeh = () => {
 		setCounter2(localStorage.getItem('counter2'));
 	};
 	var handleCount3 = () => {
+		audioRef.current.play();
 		if (counter2 == 99) {
 			toast.success('Ma sha Alloh!');
 		}
@@ -72,6 +77,7 @@ const Tasbeh = () => {
 		setCounter3(localStorage.getItem('counter3'));
 	};
 	var handleCount4 = () => {
+		audioRef.current.play();
 		if (counter2 == 99) {
 			toast.success('Ma sha Alloh!');
 		}
@@ -161,12 +167,14 @@ const Tasbeh = () => {
 						}}
 						className='wrapper'>
 						<p className='tasbeh__display'>{counter}</p>
+
 						<motion.button
 							whileHover={{ scale: 1 }}
 							whileTap={{ scale: 0.98 }}
 							transition={{ type: 'spring', stiffness: 400, damping: 17 }}
 							className='tasbeh__button'
 							onClick={() => handleCount1()}>
+							<audio ref={audioRef} src={audio}  />
 							<p className='ar'>سُبْحَانَ اللهِ</p>
 							<p className=' ar_uz '>Subhanalloh </p>
 
@@ -197,6 +205,7 @@ const Tasbeh = () => {
 							transition={{ type: 'spring', stiffness: 400, damping: 17 }}
 							className='tasbeh__button'
 							onClick={() => handleCount2()}>
+							<audio ref={audioRef} src={audio}  />
 							<p className='ar_uz'>
 								Allahumma Salli Ala Muhammad Waala Ali Muhammad{' '}
 							</p>
@@ -227,6 +236,7 @@ const Tasbeh = () => {
 							transition={{ type: 'spring', stiffness: 400, damping: 17 }}
 							className='tasbeh__button'
 							onClick={() => handleCount3()}>
+							<audio ref={audioRef} src={audio}  />
 							<p className='ar_uz'>
 								Subhanallohi va bihamdihi subhanallohil aziym{' '}
 							</p>
@@ -256,6 +266,7 @@ const Tasbeh = () => {
 							transition={{ type: 'spring', stiffness: 400, damping: 17 }}
 							className='tasbeh__button'
 							onClick={() => handleCount4()}>
+							<audio ref={audioRef} src={audio}  />
 							<p className='ar_uz'>
 								La ilaha illa anta subẍanaka inni kuntu mina-ӟ-alimin
 							</p>
