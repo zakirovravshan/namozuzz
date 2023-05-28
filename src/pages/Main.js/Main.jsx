@@ -9,7 +9,7 @@ import { GrLocation } from 'react-icons/gr';
 
 const Main = () => {
 	const currentDateTime = moment(); // Предполагаем, что время намаза передается в формате 'HH:mm'
-
+	localStorage.setItem("city" , "Toshkent")
 	const min = currentDateTime.format('mm');
 	const hour = currentDateTime.hour();
 	const [soat, setSoat] = useState(`${hour} : ${min}`);
@@ -17,6 +17,7 @@ const Main = () => {
 		JSON.parse(localStorage.getItem('prayerTime')),
 	);
 	const [city, setCity] = useState(localStorage.getItem('city'));
+	
 
 	// var namoz = Object.values(prayerTime.times);
 
